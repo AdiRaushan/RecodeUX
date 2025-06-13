@@ -18,29 +18,26 @@
 	<link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;200;300;400;500;600;700;800;900" rel="stylesheet" type="text/css" />
 	<link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@100;200;300;400;500;600;700;800;900" rel="stylesheet" type="text/css" />
 	<style>
-		.bee-row-2 .bee-col-1 .bee-block-4 a,
-		.bee-row-3 .bee-col-1 .bee-block-4 a,
-		a,
-		body {
-			color: #000000
-		}
-
 		.bee-row,
 		.bee-row-content {
 			position: relative
 		}
 
-		.bee-button-content {
-			text-align: center
-		}
-
-		.bee-row-4,
+		.bee-row-12,
 		body {
 			background-color: #ffffff
 		}
 
 		body {
+			color: #000000;
 			font-family: Lato, Tahoma, Verdana, Segoe, sans-serif
+		}
+
+		.bee-row-1 .bee-col-1 .bee-block-1 .bee-icon-label a,
+		.bee-row-1 .bee-col-1 .bee-block-7 a,
+		.bee-row-5 .bee-col-1 .bee-block-4 a,
+		a {
+			color: #000000
 		}
 
 		* {
@@ -49,11 +46,12 @@
 
 		body,
 		h1,
+		h2,
 		p {
 			margin: 0
 		}
 
-		.bee-menu .bee-hamburger-trigger {
+		.bee-desktop_hide {
 			display: none
 		}
 
@@ -63,12 +61,12 @@
 			display: flex
 		}
 
-		.bee-row-content .bee-col-w3 {
-			flex-basis: 25%
+		.bee-row-content .bee-col-w4 {
+			flex-basis: 33.3333333333%
 		}
 
-		.bee-row-content .bee-col-w9 {
-			flex-basis: 75%
+		.bee-row-content .bee-col-w6 {
+			flex-basis: 50%
 		}
 
 		.bee-row-content .bee-col-w12 {
@@ -81,6 +79,10 @@
 			text-decoration: none
 		}
 
+		.bee-button-content {
+			text-align: center
+		}
+
 		.bee-divider,
 		.bee-image {
 			overflow: auto
@@ -91,27 +93,11 @@
 			margin: 0 auto
 		}
 
-		.bee-row-1 .bee-col-1 .bee-block-1,
-		.bee-row-2 .bee-col-1 .bee-block-1,
-		.bee-row-3 .bee-col-1 .bee-block-3 {
+		.bee-row-1 .bee-col-1 .bee-block-4,
+		.bee-row-11 .bee-col-1 .bee-block-1,
+		.bee-row-5 .bee-col-1 .bee-block-3,
+		.bee-row-9 .bee-col-1 .bee-block-1 {
 			width: 100%
-		}
-
-		.bee-row-2 .bee-col-1 .bee-block-2 h1,
-		.bee-row-2 .bee-col-1 .bee-block-5 h1 {
-			color: #ffffff;
-			direction: ltr;
-			font-family: Lato, Tahoma, Verdana, Segoe, sans-serif;
-			font-weight: 900;
-			letter-spacing: normal;
-			line-height: 150%
-		}
-
-		.bee-row-1 .bee-row-content,
-		.bee-row-3 .bee-row-content {
-			border-radius: 0;
-			color: #000000;
-			background-repeat: no-repeat
 		}
 
 		.bee-icon {
@@ -138,22 +124,6 @@
 			list-style-position: outside
 		}
 
-		.bee-menu .bee-hamburger-controls {
-			cursor: pointer;
-			display: inline-block;
-			position: relative
-		}
-
-		.bee-menu .bee-hamburger-controls span {
-			display: block;
-			position: absolute;
-			top: 50%;
-			left: 50%;
-			background-size: 100%;
-			background-repeat: no-repeat;
-			transition: .12s ease-in-out
-		}
-
 		.bee-menu ul {
 			list-style-type: none;
 			margin: 0;
@@ -168,123 +138,322 @@
 			overflow-wrap: anywhere
 		}
 
+		.bee-social .icon img {
+			max-height: 32px
+		}
+
 		.bee-row-1,
+		.bee-row-10,
+		.bee-row-11,
 		.bee-row-2,
-		.bee-row-3 {
+		.bee-row-3,
+		.bee-row-4,
+		.bee-row-5,
+		.bee-row-6,
+		.bee-row-7,
+		.bee-row-8,
+		.bee-row-9 {
 			background-repeat: no-repeat
 		}
 
-		.bee-row-1 .bee-row-content {
-			background-color: #1a1a1a
+		.bee-row-1 .bee-row-content,
+		.bee-row-11 .bee-row-content,
+		.bee-row-6 .bee-row-content,
+		.bee-row-7 .bee-row-content {
+			background-color: #000000;
+			background-repeat: no-repeat;
+			border-radius: 0;
+			color: #000000
 		}
 
-		.bee-row-1 .bee-col-1 {
-			padding-left: 20px;
-			padding-right: 10px;
-			display: flex;
-			flex-direction: column;
-			justify-content: center
+		.bee-row-1 .bee-col-1,
+		.bee-row-12 .bee-col-1,
+		.bee-row-2 .bee-col-1,
+		.bee-row-4 .bee-col-1,
+		.bee-row-6 .bee-col-1,
+		.bee-row-8 .bee-col-1 {
+			padding-bottom: 5px;
+			padding-top: 5px
 		}
 
-		.bee-row-1 .bee-col-2 {
-			padding-bottom: 20px;
-			padding-left: 10px;
-			padding-top: 20px;
-			display: flex;
-			flex-direction: column;
-			justify-content: center
-		}
-
-		.bee-row-1 .bee-col-2 .bee-block-1 {
-			color: #ffffff;
+		.bee-row-1 .bee-col-1 .bee-block-1 {
+			color: #000000;
 			font-family: inherit;
-			font-size: 18px;
+			font-size: 14px;
 			font-weight: 400;
-			padding-right: 25px;
-			text-align: right
+			text-align: center
 		}
 
+		.bee-row-1 .bee-col-1 .bee-block-2 {
+			color: #e3e3e3;
+			font-family: inherit;
+			font-size: 16px;
+			font-weight: 400;
+			letter-spacing: 1px;
+			padding: 10px;
+			text-align: center
+		}
+
+		.bee-row-1 .bee-col-1 .bee-block-3,
+		.bee-row-1 .bee-col-1 .bee-block-6,
+		.bee-row-1 .bee-col-1 .bee-block-7,
+		.bee-row-2 .bee-col-1 .bee-block-10,
+		.bee-row-2 .bee-col-1 .bee-block-2,
+		.bee-row-2 .bee-col-1 .bee-block-5,
+		.bee-row-3 .bee-col-1 .bee-block-2,
+		.bee-row-3 .bee-col-1 .bee-block-5,
+		.bee-row-6 .bee-col-1 .bee-block-2,
+		.bee-row-8 .bee-col-1 .bee-block-2 {
+			padding: 10px
+		}
+
+		.bee-row-1 .bee-col-1 .bee-block-5,
+		.bee-row-2 .bee-col-1 .bee-block-1,
+		.bee-row-3 .bee-col-1 .bee-block-1,
+		.bee-row-6 .bee-col-1 .bee-block-1,
+		.bee-row-8 .bee-col-1 .bee-block-1 {
+			padding: 15px 20px;
+			text-align: center;
+			width: 100%
+		}
+
+		.bee-row-10 .bee-row-content,
 		.bee-row-2 .bee-row-content,
+		.bee-row-3 .bee-row-content,
+		.bee-row-5 .bee-row-content,
+		.bee-row-8 .bee-row-content,
+		.bee-row-9 .bee-row-content {
+			background-color: #1a1a1a;
+			background-repeat: no-repeat;
+			border-radius: 0;
+			color: #000000
+		}
+
+		.bee-row-2 .bee-col-1 .bee-block-3,
+		.bee-row-2 .bee-col-1 .bee-block-8,
+		.bee-row-3 .bee-col-1 .bee-block-3,
+		.bee-row-3 .bee-col-2 .bee-block-5 {
+			padding: 20px;
+			width: 100%
+		}
+
+		.bee-row-2 .bee-col-1 .bee-block-4,
+		.bee-row-2 .bee-col-1 .bee-block-9,
+		.bee-row-3 .bee-col-1 .bee-block-4,
+		.bee-row-3 .bee-col-2 .bee-block-6 {
+			padding: 10px;
+			text-align: center;
+			width: 100%
+		}
+
+		.bee-row-10 .bee-col-1 .bee-block-1,
+		.bee-row-2 .bee-col-1 .bee-block-6,
+		.bee-row-3 .bee-col-1 .bee-block-6,
+		.bee-row-9 .bee-col-2 .bee-block-1 {
+			padding-bottom: 10px;
+			padding-top: 10px;
+			text-align: center;
+			width: 100%
+		}
+
+		.bee-row-2 .bee-col-1 .bee-block-11,
+		.bee-row-2 .bee-col-1 .bee-block-7 {
+			padding: 15px 40px
+		}
+
+		.bee-row-10 .bee-col-2,
+		.bee-row-3 .bee-col-1,
+		.bee-row-3 .bee-col-2 {
+			padding: 20px;
+			display: flex;
+			flex-direction: column;
+			justify-content: flex-end
+		}
+
+		.bee-row-10 .bee-col-2 .bee-block-1,
+		.bee-row-3 .bee-col-1 .bee-block-10,
+		.bee-row-3 .bee-col-1 .bee-block-7,
+		.bee-row-3 .bee-col-1 .bee-block-8,
+		.bee-row-3 .bee-col-1 .bee-block-9,
+		.bee-row-3 .bee-col-2 .bee-block-1,
+		.bee-row-3 .bee-col-2 .bee-block-10,
+		.bee-row-3 .bee-col-2 .bee-block-11,
+		.bee-row-3 .bee-col-2 .bee-block-12,
+		.bee-row-3 .bee-col-2 .bee-block-13,
+		.bee-row-3 .bee-col-2 .bee-block-2,
+		.bee-row-3 .bee-col-2 .bee-block-3,
+		.bee-row-3 .bee-col-2 .bee-block-4,
+		.bee-row-3 .bee-col-2 .bee-block-7,
+		.bee-row-3 .bee-col-2 .bee-block-8,
+		.bee-row-3 .bee-col-2 .bee-block-9 {
+			color: #bfbfbf;
+			font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif;
+			font-size: 16px;
+			font-weight: 400;
+			text-align: left
+		}
+
+		.bee-row-12 .bee-row-content,
 		.bee-row-4 .bee-row-content {
 			background-color: #1a1a1a;
 			background-repeat: no-repeat;
 			color: #000000
 		}
 
-		.bee-row-2 .bee-col-1,
-		.bee-row-4 .bee-col-1 {
-			padding-bottom: 5px;
-			padding-top: 5px
-		}
-
-		.bee-row-2 .bee-col-1 .bee-block-2,
-		.bee-row-2 .bee-col-1 .bee-block-5 {
-			padding: 15px 20px;
-			text-align: center;
-			width: 100%
-		}
-
-		.bee-row-2 .bee-col-1 .bee-block-3,
-		.bee-row-2 .bee-col-1 .bee-block-4,
-		.bee-row-2 .bee-col-1 .bee-block-6 {
-			padding: 10px
-		}
-
-		.bee-row-2 .bee-col-1 .bee-block-10,
-		.bee-row-2 .bee-col-1 .bee-block-7 {
-			padding: 20px;
-			width: 100%
-		}
-
-		.bee-row-2 .bee-col-1 .bee-block-11,
-		.bee-row-2 .bee-col-1 .bee-block-8 {
+		.bee-row-4 .bee-col-1 .bee-block-1 {
 			padding: 10px;
-			text-align: center;
-			width: 100%
+			text-align: center
 		}
 
-		.bee-row-2 .bee-col-1 .bee-block-9 {
-			padding: 20px 35px 10px
-		}
-
-		.bee-row-2 .bee-col-1 .bee-block-12 {
-			padding: 20px 35px 25px
-		}
-
-		.bee-row-3 .bee-row-content {
-			background-color: #000000
-		}
-
-		.bee-row-3 .bee-col-1 {
+		.bee-row-5 .bee-col-1 {
 			padding: 20px
 		}
 
-		.bee-row-3 .bee-col-1 .bee-block-1 {
+		.bee-row-5 .bee-col-1 .bee-block-1 {
 			padding-bottom: 10px;
 			padding-top: 20px;
 			text-align: center;
 			width: 100%
 		}
 
-		.bee-row-3 .bee-col-1 .bee-block-2 {
+		.bee-row-5 .bee-col-1 .bee-block-2 {
 			padding: 10px 10px 20px
 		}
 
-		.bee-row-3 .bee-col-1 .bee-block-4 {
+		.bee-row-5 .bee-col-1 .bee-block-4 {
 			padding: 25px 10px 20px
 		}
 
-		.bee-row-3 .bee-col-1 .bee-block-5 {
+		.bee-row-5 .bee-col-1 .bee-block-5 {
 			padding-bottom: 10px;
 			padding-top: 20px;
 			text-align: center
 		}
 
-		.bee-row-4 {
+		.bee-row-7 .bee-col-1 {
+			padding: 20px 10px 20px 20px
+		}
+
+		.bee-row-7 .bee-col-1 .bee-block-1,
+		.bee-row-7 .bee-col-2 .bee-block-1 {
+			padding-bottom: 5px;
+			width: 100%
+		}
+
+		.bee-row-7 .bee-col-1 .bee-block-2,
+		.bee-row-7 .bee-col-1 .bee-block-4,
+		.bee-row-7 .bee-col-2 .bee-block-2,
+		.bee-row-7 .bee-col-2 .bee-block-4 {
+			padding-top: 10px
+		}
+
+		.bee-row-7 .bee-col-1 .bee-block-3,
+		.bee-row-7 .bee-col-2 .bee-block-3 {
+			padding-top: 25px;
+			width: 100%
+		}
+
+		.bee-row-7 .bee-col-2 {
+			padding: 20px 20px 20px 10px
+		}
+
+		.bee-row-9 .bee-col-1 {
+			padding: 20px 10px 20px 20px;
+			display: flex;
+			flex-direction: column;
+			justify-content: center
+		}
+
+		.bee-row-9 .bee-col-2 {
+			padding: 20px 20px 20px 10px;
+			display: flex;
+			flex-direction: column;
+			justify-content: center
+		}
+
+		.bee-row-9 .bee-col-2 .bee-block-3 {
+			padding-bottom: 10px;
+			padding-top: 20px;
+			text-align: left
+		}
+
+		.bee-row-10 .bee-col-1 {
+			padding: 30px;
+			display: flex;
+			flex-direction: column;
+			justify-content: flex-end
+		}
+
+		.bee-row-10 .bee-col-1 .bee-block-2,
+		.bee-row-10 .bee-col-1 .bee-block-3,
+		.bee-row-10 .bee-col-1 .bee-block-4,
+		.bee-row-10 .bee-col-1 .bee-block-5,
+		.bee-row-10 .bee-col-2 .bee-block-2,
+		.bee-row-10 .bee-col-2 .bee-block-3 {
+			color: #bfbfbf;
+			font-family: inherit;
+			font-size: 16px;
+			font-weight: 400;
+			text-align: left
+		}
+
+		.bee-row-10 .bee-col-2 .bee-block-4 {
+			color: #bfbfbf;
+			font-family: inherit;
+			font-size: 16px;
+			font-weight: 400;
+			padding-bottom: 10px;
+			text-align: left
+		}
+
+		.bee-row-11 .bee-col-1,
+		.bee-row-11 .bee-col-2 {
+			padding: 30px 10px 30px 20px
+		}
+
+		.bee-row-11 .bee-col-1 .bee-block-2 {
+			padding-top: 20px
+		}
+
+		.bee-row-11 .bee-col-2 .bee-block-1,
+		.bee-row-11 .bee-col-2 .bee-block-2 li,
+		.bee-row-11 .bee-col-3 .bee-block-1,
+		.bee-row-11 .bee-col-3 .bee-block-2 li {
+			padding-bottom: 10px
+		}
+
+		.bee-row-11 .bee-col-2 .bee-block-2 {
+			color: #bfbfbf;
+			font-family: inherit;
+			font-size: 14px;
+			font-weight: 400;
+			padding-left: 5px;
+			text-align: left
+		}
+
+		.bee-row-11 .bee-col-3 {
+			padding-bottom: 30px;
+			padding-right: 20px;
+			padding-top: 30px
+		}
+
+		.bee-row-11 .bee-col-3 .bee-block-2 {
+			color: #444a5b;
+			font-family: inherit;
+			font-size: 14px;
+			font-weight: 400;
+			text-align: left
+		}
+
+		.bee-row-11 .bee-col-3 .bee-block-3 {
+			text-align: left
+		}
+
+		.bee-row-12 {
 			background-repeat: no-repeat
 		}
 
-		.bee-row-4 .bee-col-1 .bee-block-1 {
+		.bee-row-12 .bee-col-1 .bee-block-1 {
 			color: #1e0e4b;
 			font-family: Inter, sans-serif;
 			font-size: 15px;
@@ -293,30 +462,76 @@
 			text-align: center
 		}
 
-		.bee-row-2 .bee-col-1 .bee-block-2 h1 {
-			font-size: 32px;
-			text-align: center
+		.bee-row-1 .bee-col-1 .bee-block-1 .bee-icon-image,
+		.bee-row-1 .bee-col-1 .bee-block-2 li {
+			padding: 5px
 		}
 
-		.bee-row-2 .bee-col-1 .bee-block-5 h1 {
-			font-size: 26px;
-			text-align: center
+		.bee-row-1 .bee-col-1 .bee-block-1 .bee-icon:not(.bee-icon-first) .bee-content,
+		.bee-row-10 .bee-col-1 .bee-block-2 .bee-icon:not(.bee-icon-first) .bee-content,
+		.bee-row-10 .bee-col-1 .bee-block-3 .bee-icon:not(.bee-icon-first) .bee-content,
+		.bee-row-10 .bee-col-1 .bee-block-4 .bee-icon:not(.bee-icon-first) .bee-content,
+		.bee-row-10 .bee-col-1 .bee-block-5 .bee-icon:not(.bee-icon-first) .bee-content,
+		.bee-row-10 .bee-col-2 .bee-block-1 .bee-icon:not(.bee-icon-first) .bee-content,
+		.bee-row-10 .bee-col-2 .bee-block-2 .bee-icon:not(.bee-icon-first) .bee-content,
+		.bee-row-10 .bee-col-2 .bee-block-3 .bee-icon:not(.bee-icon-first) .bee-content,
+		.bee-row-10 .bee-col-2 .bee-block-4 .bee-icon:not(.bee-icon-first) .bee-content,
+		.bee-row-12 .bee-col-1 .bee-block-1 .bee-icon:not(.bee-icon-first) .bee-content,
+		.bee-row-3 .bee-col-1 .bee-block-10 .bee-icon:not(.bee-icon-first) .bee-content,
+		.bee-row-3 .bee-col-1 .bee-block-7 .bee-icon:not(.bee-icon-first) .bee-content,
+		.bee-row-3 .bee-col-1 .bee-block-8 .bee-icon:not(.bee-icon-first) .bee-content,
+		.bee-row-3 .bee-col-1 .bee-block-9 .bee-icon:not(.bee-icon-first) .bee-content,
+		.bee-row-3 .bee-col-2 .bee-block-1 .bee-icon:not(.bee-icon-first) .bee-content,
+		.bee-row-3 .bee-col-2 .bee-block-10 .bee-icon:not(.bee-icon-first) .bee-content,
+		.bee-row-3 .bee-col-2 .bee-block-11 .bee-icon:not(.bee-icon-first) .bee-content,
+		.bee-row-3 .bee-col-2 .bee-block-12 .bee-icon:not(.bee-icon-first) .bee-content,
+		.bee-row-3 .bee-col-2 .bee-block-13 .bee-icon:not(.bee-icon-first) .bee-content,
+		.bee-row-3 .bee-col-2 .bee-block-2 .bee-icon:not(.bee-icon-first) .bee-content,
+		.bee-row-3 .bee-col-2 .bee-block-3 .bee-icon:not(.bee-icon-first) .bee-content,
+		.bee-row-3 .bee-col-2 .bee-block-4 .bee-icon:not(.bee-icon-first) .bee-content,
+		.bee-row-3 .bee-col-2 .bee-block-7 .bee-icon:not(.bee-icon-first) .bee-content,
+		.bee-row-3 .bee-col-2 .bee-block-8 .bee-icon:not(.bee-icon-first) .bee-content,
+		.bee-row-3 .bee-col-2 .bee-block-9 .bee-icon:not(.bee-icon-first) .bee-content {
+			margin-left: 0
 		}
 
-		.bee-row-2 .bee-col-1 .bee-block-11 h1,
-		.bee-row-2 .bee-col-1 .bee-block-8 h1,
-		.bee-row-3 .bee-col-1 .bee-block-1 h1 {
-			font-family: Lato, Tahoma, Verdana, Segoe, sans-serif;
-			font-weight: 700;
-			letter-spacing: normal;
-			line-height: 120%;
-			text-align: center;
+		.bee-row-1 .bee-col-1 .bee-block-1 .bee-icon::not(.bee-icon-last) .bee-content {
+			margin-right: 0
+		}
+
+		.bee-row-1 .bee-col-1 .bee-block-2 li a,
+		.bee-row-2 .bee-col-1 .bee-block-11 li a,
+		.bee-row-2 .bee-col-1 .bee-block-7 li a {
+			color: #7747FF
+		}
+
+		.bee-row-1 .bee-col-1 .bee-block-5 h1 {
 			color: #ffffff;
-			direction: ltr
+			direction: ltr;
+			font-family: Lato, Tahoma, Verdana, Segoe, sans-serif;
+			font-size: 32px;
+			font-weight: 900;
+			letter-spacing: normal;
+			line-height: 150%;
+			text-align: center
 		}
 
-		.bee-row-2 .bee-col-1 .bee-block-4,
-		.bee-row-3 .bee-col-1 .bee-block-4 {
+		.bee-row-2 .bee-col-1 .bee-block-1 h1,
+		.bee-row-3 .bee-col-1 .bee-block-1 h1,
+		.bee-row-6 .bee-col-1 .bee-block-1 h1,
+		.bee-row-8 .bee-col-1 .bee-block-1 h1 {
+			color: #ffffff;
+			direction: ltr;
+			font-family: Lato, Tahoma, Verdana, Segoe, sans-serif;
+			font-size: 26px;
+			font-weight: 900;
+			letter-spacing: normal;
+			line-height: 150%;
+			text-align: center
+		}
+
+		.bee-row-1 .bee-col-1 .bee-block-7,
+		.bee-row-5 .bee-col-1 .bee-block-4 {
 			color: #bfbfbf;
 			direction: ltr;
 			font-family: Merriweather, Georgia, serif;
@@ -327,21 +542,446 @@
 			text-align: center
 		}
 
-		.bee-row-2 .bee-col-1 .bee-block-4 p:not(:last-child),
-		.bee-row-3 .bee-col-1 .bee-block-4 p:not(:last-child) {
+		.bee-row-1 .bee-col-1 .bee-block-7 p:not(:last-child),
+		.bee-row-11 .bee-col-1 .bee-block-2 p:not(:last-child),
+		.bee-row-11 .bee-col-2 .bee-block-1 p:not(:last-child),
+		.bee-row-11 .bee-col-3 .bee-block-1 p:not(:last-child),
+		.bee-row-5 .bee-col-1 .bee-block-4 p:not(:last-child),
+		.bee-row-7 .bee-col-1 .bee-block-2 p:not(:last-child),
+		.bee-row-7 .bee-col-1 .bee-block-4 p:not(:last-child),
+		.bee-row-7 .bee-col-2 .bee-block-2 p:not(:last-child),
+		.bee-row-7 .bee-col-2 .bee-block-4 p:not(:last-child),
+		.bee-row-9 .bee-col-2 .bee-block-2 p:not(:last-child) {
 			margin-bottom: 16px
 		}
 
-		.bee-row-2 .bee-col-1 .bee-block-11 h1,
-		.bee-row-2 .bee-col-1 .bee-block-8 h1 {
-			font-size: 22px
+		.bee-row-2 .bee-col-1 .bee-block-4 h1,
+		.bee-row-2 .bee-col-1 .bee-block-9 h1,
+		.bee-row-3 .bee-col-1 .bee-block-4 h1,
+		.bee-row-3 .bee-col-2 .bee-block-6 h1 {
+			color: #ffffff;
+			direction: ltr;
+			font-family: Lato, Tahoma, Verdana, Segoe, sans-serif;
+			font-size: 26px;
+			font-weight: 700;
+			letter-spacing: normal;
+			line-height: 120%;
+			text-align: center
 		}
 
-		.bee-row-2 .bee-col-1 .bee-block-12,
-		.bee-row-2 .bee-col-1 .bee-block-9 {
+		.bee-row-2 .bee-col-1 .bee-block-6 h2,
+		.bee-row-3 .bee-col-1 .bee-block-6 h2 {
+			font-size: 24px;
+			font-weight: 700;
+			letter-spacing: normal;
+			color: #ffffff;
+			direction: ltr
+		}
+
+		.bee-row-2 .bee-col-1 .bee-block-11,
+		.bee-row-2 .bee-col-1 .bee-block-7 {
 			color: #bfbfbf;
 			direction: ltr;
 			font-family: Merriweather, Georgia, serif;
+			font-size: 16px;
+			font-weight: 400;
+			letter-spacing: 0;
+			line-height: 180%;
+			text-align: left
+		}
+
+		.bee-row-2 .bee-col-1 .bee-block-11 ul,
+		.bee-row-2 .bee-col-1 .bee-block-7 ul {
+			list-style-type: revert;
+			list-style-position: inside
+		}
+
+		.bee-row-2 .bee-col-1 .bee-block-11 li:not(:last-child),
+		.bee-row-2 .bee-col-1 .bee-block-7 li:not(:last-child) {
+			margin-bottom: 0
+		}
+
+		.bee-row-2 .bee-col-1 .bee-block-11 li ul,
+		.bee-row-2 .bee-col-1 .bee-block-7 li ul {
+			margin-top: 0
+		}
+
+		.bee-row-2 .bee-col-1 .bee-block-11 li li,
+		.bee-row-2 .bee-col-1 .bee-block-7 li li {
+			margin-left: 30px
+		}
+
+		.bee-row-2 .bee-col-1 .bee-block-6 h2 {
+			font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+			line-height: 150%;
+			text-align: center
+		}
+
+		.bee-row-10 .bee-col-1 .bee-block-2 .bee-icon-image,
+		.bee-row-10 .bee-col-1 .bee-block-3 .bee-icon-image,
+		.bee-row-10 .bee-col-1 .bee-block-4 .bee-icon-image,
+		.bee-row-10 .bee-col-1 .bee-block-5 .bee-icon-image,
+		.bee-row-10 .bee-col-2 .bee-block-1 .bee-icon-image,
+		.bee-row-10 .bee-col-2 .bee-block-2 .bee-icon-image,
+		.bee-row-10 .bee-col-2 .bee-block-3 .bee-icon-image,
+		.bee-row-10 .bee-col-2 .bee-block-4 .bee-icon-image,
+		.bee-row-3 .bee-col-1 .bee-block-10 .bee-icon-image,
+		.bee-row-3 .bee-col-1 .bee-block-7 .bee-icon-image,
+		.bee-row-3 .bee-col-1 .bee-block-8 .bee-icon-image,
+		.bee-row-3 .bee-col-1 .bee-block-9 .bee-icon-image,
+		.bee-row-3 .bee-col-2 .bee-block-1 .bee-icon-image,
+		.bee-row-3 .bee-col-2 .bee-block-10 .bee-icon-image,
+		.bee-row-3 .bee-col-2 .bee-block-11 .bee-icon-image,
+		.bee-row-3 .bee-col-2 .bee-block-12 .bee-icon-image,
+		.bee-row-3 .bee-col-2 .bee-block-13 .bee-icon-image,
+		.bee-row-3 .bee-col-2 .bee-block-2 .bee-icon-image,
+		.bee-row-3 .bee-col-2 .bee-block-3 .bee-icon-image,
+		.bee-row-3 .bee-col-2 .bee-block-4 .bee-icon-image,
+		.bee-row-3 .bee-col-2 .bee-block-7 .bee-icon-image,
+		.bee-row-3 .bee-col-2 .bee-block-8 .bee-icon-image,
+		.bee-row-3 .bee-col-2 .bee-block-9 .bee-icon-image {
+			padding: 10px 10px 10px 0
+		}
+
+		.bee-row-3 .bee-col-1 .bee-block-7 .bee-icon::not(.bee-icon-last) .bee-content {
+			margin-right: 0
+		}
+
+		.bee-row-10 .bee-col-1 .bee-block-2 .bee-icon-label a,
+		.bee-row-10 .bee-col-1 .bee-block-3 .bee-icon-label a,
+		.bee-row-10 .bee-col-1 .bee-block-4 .bee-icon-label a,
+		.bee-row-10 .bee-col-1 .bee-block-5 .bee-icon-label a,
+		.bee-row-10 .bee-col-2 .bee-block-1 .bee-icon-label a,
+		.bee-row-10 .bee-col-2 .bee-block-2 .bee-icon-label a,
+		.bee-row-10 .bee-col-2 .bee-block-3 .bee-icon-label a,
+		.bee-row-10 .bee-col-2 .bee-block-4 .bee-icon-label a,
+		.bee-row-11 .bee-col-2 .bee-block-2 li a,
+		.bee-row-11 .bee-col-3 .bee-block-2 li a,
+		.bee-row-3 .bee-col-1 .bee-block-10 .bee-icon-label a,
+		.bee-row-3 .bee-col-1 .bee-block-7 .bee-icon-label a,
+		.bee-row-3 .bee-col-1 .bee-block-8 .bee-icon-label a,
+		.bee-row-3 .bee-col-1 .bee-block-9 .bee-icon-label a,
+		.bee-row-3 .bee-col-2 .bee-block-1 .bee-icon-label a,
+		.bee-row-3 .bee-col-2 .bee-block-10 .bee-icon-label a,
+		.bee-row-3 .bee-col-2 .bee-block-11 .bee-icon-label a,
+		.bee-row-3 .bee-col-2 .bee-block-12 .bee-icon-label a,
+		.bee-row-3 .bee-col-2 .bee-block-13 .bee-icon-label a,
+		.bee-row-3 .bee-col-2 .bee-block-2 .bee-icon-label a,
+		.bee-row-3 .bee-col-2 .bee-block-3 .bee-icon-label a,
+		.bee-row-3 .bee-col-2 .bee-block-4 .bee-icon-label a,
+		.bee-row-3 .bee-col-2 .bee-block-7 .bee-icon-label a,
+		.bee-row-3 .bee-col-2 .bee-block-8 .bee-icon-label a,
+		.bee-row-3 .bee-col-2 .bee-block-9 .bee-icon-label a {
+			color: #bfbfbf
+		}
+
+		.bee-row-3 .bee-col-1 .bee-block-6 h2 {
+			font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+			line-height: 150%;
+			text-align: left
+		}
+
+		.bee-row-3 .bee-col-1 .bee-block-8 .bee-icon::not(.bee-icon-last) .bee-content {
+			margin-right: 0
+		}
+
+		.bee-row-3 .bee-col-1 .bee-block-9 .bee-icon::not(.bee-icon-last) .bee-content {
+			margin-right: 0
+		}
+
+		.bee-row-3 .bee-col-1 .bee-block-10 .bee-icon::not(.bee-icon-last) .bee-content {
+			margin-right: 0
+		}
+
+		.bee-row-3 .bee-col-2 .bee-block-1 .bee-icon::not(.bee-icon-last) .bee-content {
+			margin-right: 0
+		}
+
+		.bee-row-3 .bee-col-2 .bee-block-2 .bee-icon::not(.bee-icon-last) .bee-content {
+			margin-right: 0
+		}
+
+		.bee-row-3 .bee-col-2 .bee-block-3 .bee-icon::not(.bee-icon-last) .bee-content {
+			margin-right: 0
+		}
+
+		.bee-row-3 .bee-col-2 .bee-block-4 .bee-icon::not(.bee-icon-last) .bee-content {
+			margin-right: 0
+		}
+
+		.bee-row-3 .bee-col-2 .bee-block-7 .bee-icon::not(.bee-icon-last) .bee-content {
+			margin-right: 0
+		}
+
+		.bee-row-3 .bee-col-2 .bee-block-8 .bee-icon::not(.bee-icon-last) .bee-content {
+			margin-right: 0
+		}
+
+		.bee-row-3 .bee-col-2 .bee-block-9 .bee-icon::not(.bee-icon-last) .bee-content {
+			margin-right: 0
+		}
+
+		.bee-row-3 .bee-col-2 .bee-block-12 .bee-icon::not(.bee-icon-last) .bee-content {
+			margin-right: 0
+		}
+
+		.bee-row-3 .bee-col-2 .bee-block-11 .bee-icon::not(.bee-icon-last) .bee-content {
+			margin-right: 0
+		}
+
+		.bee-row-3 .bee-col-2 .bee-block-10 .bee-icon::not(.bee-icon-last) .bee-content {
+			margin-right: 0
+		}
+
+		.bee-row-3 .bee-col-2 .bee-block-13 .bee-icon::not(.bee-icon-last) .bee-content {
+			margin-right: 0
+		}
+
+		.bee-row-5 .bee-col-1 .bee-block-1 h1 {
+			color: #ffffff;
+			direction: ltr;
+			font-family: Lato, Tahoma, Verdana, Segoe, sans-serif;
+			font-size: 32px;
+			font-weight: 700;
+			letter-spacing: normal;
+			line-height: 120%;
+			text-align: center
+		}
+
+		.bee-row-4 .bee-col-1 .bee-block-1 a:hover {
+			background-color: #000000 !important;
+			border-bottom: 0 solid #222222 !important;
+			border-left: 0 solid #222222 !important;
+			border-right: 0px solid #222222 !important;
+			border-top: 0 solid #222222 !important;
+			color: #ffffff !important
+		}
+
+		.bee-row-4 .bee-col-1 .bee-block-1 a {
+			background-color: #467ff7;
+			border-radius: 4px;
+			color: #ffffff;
+			direction: ltr;
+			font-family: inherit;
+			font-size: 16px;
+			font-weight: 400;
+			letter-spacing: 0;
+			line-height: 200%;
+			padding: 5px 20px;
+			width: auto
+		}
+
+		.bee-row-5 .bee-col-1 .bee-block-5 a,
+		.bee-row-9 .bee-col-2 .bee-block-3 a {
+			background-color: #467ff7;
+			border-bottom: 0 solid #7747FF;
+			border-left: 0 solid #7747FF;
+			border-right: 0px solid #7747FF;
+			border-top: 0 solid #7747FF;
+			padding: 8px 20px;
+			width: auto;
+			direction: ltr
+		}
+
+		.bee-row-7 .bee-col-1 .bee-block-2,
+		.bee-row-7 .bee-col-1 .bee-block-4,
+		.bee-row-7 .bee-col-2 .bee-block-2,
+		.bee-row-7 .bee-col-2 .bee-block-4 {
+			color: #bfbfbf;
+			direction: ltr;
+			font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+			font-size: 14px;
+			font-weight: 400;
+			letter-spacing: 0;
+			line-height: 150%;
+			text-align: center
+		}
+
+		.bee-row-11 .bee-col-1 .bee-block-2 a,
+		.bee-row-11 .bee-col-2 .bee-block-1 a,
+		.bee-row-11 .bee-col-3 .bee-block-1 a,
+		.bee-row-7 .bee-col-1 .bee-block-2 a,
+		.bee-row-7 .bee-col-1 .bee-block-4 a,
+		.bee-row-7 .bee-col-2 .bee-block-2 a,
+		.bee-row-7 .bee-col-2 .bee-block-4 a,
+		.bee-row-9 .bee-col-2 .bee-block-2 a {
+			color: #7747ff
+		}
+
+		@media (max-width:620px) {
+			.bee-desktop_hide {
+				display: block !important
+			}
+
+			img.bee-fullwidthOnMobile {
+				max-width: none !important
+			}
+
+			.bee-mobile_hide {
+				display: none
+			}
+
+			.bee-row-content:not(.no_stack) {
+				display: block
+			}
+
+			.bee-row-10 .bee-col-1,
+			.bee-row-3 .bee-col-1 {
+				padding: 20px 20px 0 !important
+			}
+
+			.bee-row-10 .bee-col-2,
+			.bee-row-3 .bee-col-2 {
+				padding: 0 20px 20px !important
+			}
+
+			.bee-row-4 .bee-col-1 .bee-block-1,
+			.bee-row-5 .bee-col-1,
+			.bee-row-7 .bee-col-1,
+			.bee-row-7 .bee-col-2 {
+				padding: 20px !important
+			}
+
+			.bee-row-9 .bee-col-1 {
+				padding: 20px 20px 10px !important
+			}
+
+			.bee-row-9 .bee-col-2 {
+				padding: 10px 20px 20px !important
+			}
+
+			.bee-row-11 .bee-col-1 {
+				padding: 30px 20px 10px !important
+			}
+
+			.bee-row-11 .bee-col-2 {
+				padding: 10px 20px !important
+			}
+
+			.bee-row-11 .bee-col-3 {
+				padding: 10px 20px 30px !important
+			}
+
+			.bee-row-1 .bee-col-1 .bee-block-7 {
+				text-align: center !important;
+				font-size: 15px !important
+			}
+
+			.bee-row-2 .bee-col-1 .bee-block-3,
+			.bee-row-3 .bee-col-1 .bee-block-3 {
+				padding: 0 !important
+			}
+
+			.bee-row-2 .bee-col-1 .bee-block-3 img,
+			.bee-row-2 .bee-col-1 .bee-block-8 img,
+			.bee-row-3 .bee-col-1 .bee-block-3 img,
+			.bee-row-3 .bee-col-2 .bee-block-5 img {
+				float: none !important;
+				margin: 0 auto !important
+			}
+
+			.bee-row-2 .bee-col-1 .bee-block-6,
+			.bee-row-2 .bee-col-1 .bee-block-6 h2,
+			.bee-row-3 .bee-col-1 .bee-block-6,
+			.bee-row-3 .bee-col-1 .bee-block-6 h2 {
+				text-align: center
+			}
+
+			.bee-row-2 .bee-col-1 .bee-block-8,
+			.bee-row-3 .bee-col-2 .bee-block-5 {
+				padding: 30px 0 20px !important
+			}
+
+			.bee-row-2 .bee-col-1 .bee-block-9,
+			.bee-row-3 .bee-col-2 .bee-block-6 {
+				padding: 10px
+			}
+
+			.bee-row-3 .bee-col-1 .bee-block-7 {
+				padding: 0 0 0 20px !important;
+				text-align: left !important
+			}
+
+			.bee-row-3 .bee-col-1 .bee-block-10 .bee-icon-label,
+			.bee-row-3 .bee-col-1 .bee-block-7 .bee-icon-label,
+			.bee-row-3 .bee-col-1 .bee-block-8 .bee-icon-label,
+			.bee-row-3 .bee-col-1 .bee-block-9 .bee-icon-label,
+			.bee-row-3 .bee-col-2 .bee-block-1 .bee-icon-label,
+			.bee-row-3 .bee-col-2 .bee-block-10 .bee-icon-label,
+			.bee-row-3 .bee-col-2 .bee-block-11 .bee-icon-label,
+			.bee-row-3 .bee-col-2 .bee-block-12 .bee-icon-label,
+			.bee-row-3 .bee-col-2 .bee-block-13 .bee-icon-label,
+			.bee-row-3 .bee-col-2 .bee-block-2 .bee-icon-label,
+			.bee-row-3 .bee-col-2 .bee-block-3 .bee-icon-label,
+			.bee-row-3 .bee-col-2 .bee-block-4 .bee-icon-label,
+			.bee-row-3 .bee-col-2 .bee-block-7 .bee-icon-label,
+			.bee-row-3 .bee-col-2 .bee-block-8 .bee-icon-label,
+			.bee-row-3 .bee-col-2 .bee-block-9 .bee-icon-label {
+				font-size: 16px !important;
+				text-align: center
+			}
+
+			.bee-row-3 .bee-col-1 .bee-block-10,
+			.bee-row-3 .bee-col-1 .bee-block-8,
+			.bee-row-3 .bee-col-1 .bee-block-9,
+			.bee-row-3 .bee-col-2 .bee-block-1,
+			.bee-row-3 .bee-col-2 .bee-block-10,
+			.bee-row-3 .bee-col-2 .bee-block-11,
+			.bee-row-3 .bee-col-2 .bee-block-12,
+			.bee-row-3 .bee-col-2 .bee-block-13,
+			.bee-row-3 .bee-col-2 .bee-block-2,
+			.bee-row-3 .bee-col-2 .bee-block-3,
+			.bee-row-3 .bee-col-2 .bee-block-4,
+			.bee-row-3 .bee-col-2 .bee-block-7,
+			.bee-row-3 .bee-col-2 .bee-block-8,
+			.bee-row-3 .bee-col-2 .bee-block-9 {
+				padding: 0 0 0 20px !important
+			}
+
+			.bee-row-5 .bee-col-1 .bee-block-1 h1 {
+				font-size: 30px
+			}
+
+			.bee-row-4 .bee-col-1 .bee-block-1 .bee-button-content {
+				text-align: center !important
+			}
+
+			.bee-row-5 .bee-col-1 .bee-block-5 .bee-button-content {
+				font-size: initial !important;
+				line-height: normal !important;
+				text-align: center !important
+			}
+
+			.bee-row-5 .bee-col-1 .bee-block-5 a,
+			.bee-row-5 .bee-col-1 .bee-block-5 span {
+				text-align: center !important;
+				font-size: 16px !important;
+				line-height: auto !important
+			}
+		}
+
+		.bee-row-5 .bee-col-1 .bee-block-5 a:hover {
+			background-color: #000000 !important;
+			border-bottom: 0 solid #353535 !important;
+			border-left: 0 solid #353535 !important;
+			border-right: 0px solid #353535 !important;
+			border-top: 0 solid #353535 !important;
+			color: #ffffff !important
+		}
+
+		.bee-row-5 .bee-col-1 .bee-block-5 a {
+			border-radius: 10px;
+			color: #ffffff;
+			font-family: inherit;
+			font-size: 18px;
+			font-weight: 400;
+			letter-spacing: 0;
+			line-height: 200%
+		}
+
+		.bee-row-9 .bee-col-2 .bee-block-2 {
+			color: #bfbfbf;
+			direction: ltr;
 			font-size: 16px;
 			font-weight: 400;
 			letter-spacing: 0;
@@ -349,179 +989,153 @@
 			text-align: left
 		}
 
-		.bee-row-2 .bee-col-1 .bee-block-12 ul,
-		.bee-row-2 .bee-col-1 .bee-block-9 ul {
-			list-style-type: revert;
-			list-style-position: inside
+		.bee-row-9 .bee-col-2 .bee-block-1 h2 {
+			color: #ffffff;
+			direction: ltr;
+			font-family: Lato, Tahoma, Verdana, Segoe, sans-serif;
+			font-size: 24px;
+			font-weight: 700;
+			letter-spacing: normal;
+			line-height: 120%;
+			text-align: left
 		}
 
-		.bee-row-2 .bee-col-1 .bee-block-12 li:not(:last-child),
-		.bee-row-2 .bee-col-1 .bee-block-9 li:not(:last-child) {
-			margin-bottom: 0
-		}
-
-		.bee-row-2 .bee-col-1 .bee-block-12 li ul,
-		.bee-row-2 .bee-col-1 .bee-block-9 li ul {
-			margin-top: 0
-		}
-
-		.bee-row-2 .bee-col-1 .bee-block-12 li a,
-		.bee-row-2 .bee-col-1 .bee-block-9 li a {
-			color: #7747FF
-		}
-
-		.bee-row-2 .bee-col-1 .bee-block-12 li li,
-		.bee-row-2 .bee-col-1 .bee-block-9 li li {
-			margin-left: 30px
-		}
-
-		.bee-row-1 .bee-col-2 .bee-block-1 li {
-			padding: 5px 20px 20px
-		}
-
-		.bee-row-1 .bee-col-2 .bee-block-1 li a {
-			color: #e1e1e1
-		}
-
-		.bee-row-3 .bee-col-1 .bee-block-1 h1 {
-			font-size: 32px
-		}
-
-		@media (max-width:620px) {
-			img.bee-fullwidthOnMobile {
-				max-width: none !important
-			}
-
-			.bee-menu ul.with-bee-hamburger {
-				display: none;
-				padding: 5px 0;
-				position: relative;
-				top: -4px
-			}
-
-			.bee-menu ul.with-bee-hamburger li {
-				display: block;
-				text-align: center
-			}
-
-			.bee-menu ul.with-bee-hamburger li a {
-				text-decoration: none
-			}
-
-			.bee-menu ul.with-bee-hamburger span {
-				display: none
-			}
-
-			#bee-hamburger-memu-r0c1m0:checked~ul,
-			.bee-row-content:not(.no_stack) {
-				display: block
-			}
-
-			.bee-row-1 .bee-col-1 {
-				padding: 30px 20px 10px !important
-			}
-
-			.bee-row-1 .bee-col-2 {
-				padding: 10px 20px 30px !important
-			}
-
-			.bee-row-3 .bee-col-1 {
-				padding: 20px !important
-			}
-
-			.bee-row-1 .bee-col-1 .bee-block-1 img {
-				float: none !important;
-				margin: 0 auto !important
-			}
-
-			.bee-row-1 .bee-col-2 .bee-block-1 .bee-hamburger-controls {
-				width: 36px;
-				height: 36px;
-				background-color: #1a1a1a;
-				border-radius: 0
-			}
-
-			.bee-row-1 .bee-col-2 .bee-block-1 .bee-hamburger-controls span {
-				width: 18px;
-				height: 18px
-			}
-
-			.bee-row-1 .bee-col-2 .bee-block-1 .bee-hamburger-controls span.bee-hamburger-open {
-				background-image: url("data:image/svg+xml;base64,PHN2ZyBoZWlnaHQ9IjY0IiB2aWV3Qm94PSIwIDAgNjQgNjQiIHdpZHRoPSI2NCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48ZyBmaWxsPSIjZmZmZmZmIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiPjxyZWN0IGhlaWdodD0iMTIiIHJ4PSI2IiB3aWR0aD0iNjQiLz48cmVjdCBoZWlnaHQ9IjEyIiByeD0iNiIgd2lkdGg9IjY0IiB5PSI1MiIvPjxyZWN0IGhlaWdodD0iMTIiIHJ4PSI2IiB3aWR0aD0iNjQiIHk9IjI2Ii8+PC9nPjwvc3ZnPg==");
-				transform: translate(-50%, -50%) scaleY(1)
-			}
-
-			.bee-row-1 .bee-col-2 .bee-block-1 .bee-hamburger-controls span.bee-hamburger-close {
-				background-image: url("data:image/svg+xml;base64,PHN2ZyBoZWlnaHQ9IjY0IiB2aWV3Qm94PSIwIDAgNjQgNjQiIHdpZHRoPSI2NCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48ZyBmaWxsPSIjZmZmZmZmIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiPjxyZWN0IGhlaWdodD0iMTIiIHJ4PSI2IiB0cmFuc2Zvcm09Im1hdHJpeCgtLjcwNzEwNjc4IC0uNzA3MTA2NzggLjcwNzEwNjc4IC0uNzA3MTA2NzggMzEuOTkxMzc4IDc3LjIzNDAxOSkiIHdpZHRoPSI4MiIgeD0iLTkuMDA4NjIyIiB5PSIyNS45OTEzNzgiLz48cmVjdCBoZWlnaHQ9IjEyIiByeD0iNiIgdHJhbnNmb3JtPSJtYXRyaXgoLS43MDcxMDY3OCAuNzA3MTA2NzggLS43MDcxMDY3OCAtLjcwNzEwNjc4IDc3LjgxOTgwNiAzMi4yMzQwMTkpIiB3aWR0aD0iODIiIHg9Ii04Ljc2NTk4MSIgeT0iMjYuMjM0MDE5Ii8+PC9nPjwvc3ZnPg==");
-				transform: translate(-50%, -50%) scaleY(0)
-			}
-
-			.bee-row-1 .bee-col-2 .bee-block-1 ul.with-bee-hamburger {
-				background-color: #1a1a1a
-			}
-
-			.bee-row-1 .bee-col-2 .bee-block-1 ul.with-bee-hamburger li,
-			.bee-row-1 .bee-col-2 .bee-block-1 ul.with-bee-hamburger li a {
-				color: #ffffff
-			}
-
-			#bee-hamburger-memu-r0c1m0:checked~.bee-hamburger-controls .bee-hamburger-open {
-				transform: translate(-50%, -50%) scaleY(0)
-			}
-
-			#bee-hamburger-memu-r0c1m0:checked~.bee-hamburger-controls .bee-hamburger-close {
-				transform: translate(-50%, -50%) scaleY(1)
-			}
-
-			.bee-row-1 .bee-col-2 .bee-block-1 {
-				text-align: right !important
-			}
-
-			.bee-row-3 .bee-col-1 .bee-block-1 h1 {
-				font-size: 30px
-			}
-		}
-
-		.bee-row-4 .bee-col-1 .bee-block-1 .bee-icon-image {
-			padding: 5px 6px 5px 5px
-		}
-
-		.bee-row-4 .bee-col-1 .bee-block-1 .bee-icon:not(.bee-icon-first) .bee-content {
-			margin-left: 0
-		}
-
-		.bee-row-4 .bee-col-1 .bee-block-1 .bee-icon::not(.bee-icon-last) .bee-content {
-			margin-right: 0
-		}
-
-		.bee-row-4 .bee-col-1 .bee-block-1 .bee-icon-label a {
-			color: #1e0e4b
-		}
-
-		.bee-row-3 .bee-col-1 .bee-block-5 a:hover {
+		.bee-row-9 .bee-col-2 .bee-block-3 a:hover {
 			background-color: #000000 !important;
-			border-bottom: 1px solid #000000 !important;
-			border-left: 1px solid #000000 !important;
-			border-right: 1px solid #000000 !important;
-			border-top: 1px solid #000000 !important;
+			border-bottom: 0 solid transparent !important;
+			border-left: 0 solid transparent !important;
+			border-right: 0px solid transparent !important;
+			border-top: 0 solid transparent !important;
 			color: #ffffff !important
 		}
 
-		.bee-row-3 .bee-col-1 .bee-block-5 a {
-			background-color: #467ff7;
-			border-bottom: 0 solid #7747FF;
-			border-left: 0 solid #7747FF;
-			border-radius: 10px;
-			border-right: 0px solid #7747FF;
-			border-top: 0 solid #7747FF;
+		.bee-row-9 .bee-col-2 .bee-block-3 a {
+			border-radius: 4px;
+			color: #ffffff;
+			font-family: inherit;
+			font-size: 16px;
+			font-weight: 400;
+			line-height: 200%
+		}
+
+		.bee-row-10 .bee-col-1 .bee-block-1 h2 {
 			color: #ffffff;
 			direction: ltr;
-			font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
-			font-size: 18px;
+			font-family: Lato, Tahoma, Verdana, Segoe, sans-serif;
+			font-size: 24px;
+			font-weight: 700;
+			letter-spacing: normal;
+			line-height: 150%;
+			text-align: left
+		}
+
+		.bee-row-10 .bee-col-1 .bee-block-2 .bee-icon::not(.bee-icon-last) .bee-content {
+			margin-right: 0
+		}
+
+		.bee-row-10 .bee-col-1 .bee-block-3 .bee-icon::not(.bee-icon-last) .bee-content {
+			margin-right: 0
+		}
+
+		.bee-row-10 .bee-col-1 .bee-block-4 .bee-icon::not(.bee-icon-last) .bee-content {
+			margin-right: 0
+		}
+
+		.bee-row-10 .bee-col-1 .bee-block-5 .bee-icon::not(.bee-icon-last) .bee-content {
+			margin-right: 0
+		}
+
+		.bee-row-10 .bee-col-2 .bee-block-1 .bee-icon::not(.bee-icon-last) .bee-content {
+			margin-right: 0
+		}
+
+		.bee-row-10 .bee-col-2 .bee-block-2 .bee-icon::not(.bee-icon-last) .bee-content {
+			margin-right: 0
+		}
+
+		.bee-row-10 .bee-col-2 .bee-block-4 .bee-icon::not(.bee-icon-last) .bee-content {
+			margin-right: 0
+		}
+
+		.bee-row-10 .bee-col-2 .bee-block-3 .bee-icon::not(.bee-icon-last) .bee-content {
+			margin-right: 0
+		}
+
+		.bee-row-11 .bee-col-1 .bee-block-2 {
+			color: #bfbfbf;
+			direction: ltr;
+			font-size: 14px;
 			font-weight: 400;
-			line-height: 200%;
-			padding: 8px 20px;
-			width: auto
+			letter-spacing: 0;
+			line-height: 150%;
+			text-align: left
+		}
+
+		.bee-row-11 .bee-col-2 .bee-block-1,
+		.bee-row-11 .bee-col-3 .bee-block-1 {
+			color: #ffffff;
+			direction: ltr;
+			font-size: 16px;
+			font-weight: 700;
+			letter-spacing: 0;
+			line-height: 150%;
+			text-align: left
+		}
+
+		@media (max-width:620px) {
+			.bee-row-9 .bee-col-2 .bee-block-2 {
+				text-align: left !important;
+				font-size: 16px !important
+			}
+
+			.bee-row-9 .bee-col-2 .bee-block-1 {
+				padding: 10px 0;
+				text-align: left
+			}
+
+			.bee-row-9 .bee-col-2 .bee-block-1 h2 {
+				font-size: 24px;
+				text-align: left
+			}
+
+			.bee-row-9 .bee-col-2 .bee-block-3 {
+				padding: 20px 0 10px !important;
+				text-align: left !important
+			}
+
+			.bee-row-9 .bee-col-2 .bee-block-3 .bee-button-content {
+				text-align: center !important
+			}
+
+			.bee-row-10 .bee-col-1 .bee-block-2 .bee-icon-label,
+			.bee-row-10 .bee-col-1 .bee-block-3 .bee-icon-label,
+			.bee-row-10 .bee-col-1 .bee-block-4 .bee-icon-label,
+			.bee-row-10 .bee-col-1 .bee-block-5 .bee-icon-label,
+			.bee-row-10 .bee-col-2 .bee-block-1 .bee-icon-label,
+			.bee-row-10 .bee-col-2 .bee-block-2 .bee-icon-label,
+			.bee-row-10 .bee-col-2 .bee-block-3 .bee-icon-label,
+			.bee-row-10 .bee-col-2 .bee-block-4 .bee-icon-label {
+				font-size: 16px !important;
+				text-align: center
+			}
+
+			.bee-row-11 .bee-col-2 .bee-block-2,
+			.bee-row-11 .bee-col-3 .bee-block-2,
+			.bee-row-11 .bee-col-3 .bee-block-3 {
+				text-align: left !important
+			}
+		}
+
+		.bee-row-12 .bee-col-1 .bee-block-1 .bee-icon-image {
+			padding: 5px 6px 5px 5px
+		}
+
+		.bee-row-12 .bee-col-1 .bee-block-1 .bee-icon::not(.bee-icon-last) .bee-content {
+			margin-right: 0
+		}
+
+		.bee-row-12 .bee-col-1 .bee-block-1 .bee-icon-label a {
+			color: #1e0e4b
 		}
 	</style>
 </head>
@@ -529,77 +1143,251 @@
 <body>
 	<div class="bee-page-container">
 		<div class="bee-row bee-row-1">
-			<div class="bee-row-content no_stack">
-				<div class="bee-col bee-col-1 bee-col-w3">
-					<div class="bee-block bee-block-1 bee-image"><img alt="" class="bee-fixedwidth" src="https://d63c45f0ff.imgdist.com/pub/bfra/pm0i19b2/lfk/yqf/dzq/e__1_-removebg-preview.png" style="max-width:120px;" /></div>
-				</div>
-				<div class="bee-col bee-col-2 bee-col-w9">
-					<div class="bee-block bee-block-1 bee-menu">
-						<nav class="bee-menu"><input class="bee-hamburger-trigger" id="bee-hamburger-memu-r0c1m0" type="checkbox" /><label class="bee-hamburger-controls" for="bee-hamburger-memu-r0c1m0"><span class="bee-hamburger-open"></span><span class="bee-hamburger-close"></span></label>
-							<ul class="bee-horizontal with-bee-hamburger">
-								<li><a href="https://example.com/" target="_self" title="">Services</a></li>
-								<li><a href="https://example.com/" target="_self" title="">Packages</a></li>
-								<li><a href="https://example.com/" target="_self" title="">Contact</a></li>
-							</ul>
-						</nav>
-					</div>
-				</div>
-			</div>
-		</div>
-		<div class="bee-row bee-row-2">
 			<div class="bee-row-content">
 				<div class="bee-col bee-col-1 bee-col-w12">
-					<div class="bee-block bee-block-1 bee-image"><img alt="" class="bee-center bee-autowidth" src="https://d63c45f0ff.imgdist.com/pub/bfra/pm0i19b2/zrk/86p/c84/wd%20Cover.png" style="max-width:600px;" /></div>
-					<div class="bee-block bee-block-2 bee-heading">
-						<h1><span class="tinyMce-placeholder">Welcome to Recode UX </span> </h1>
+					<div class="bee-block bee-block-1 bee-icons">
+						<div class="bee-icon bee-icon-last">
+							<div class="bee-content">
+								<div class="bee-icon-image"><img alt="" height="48px" src="https://d63c45f0ff.imgdist.com/pub/bfra/pm0i19b2/lfk/yqf/dzq/e__1_-removebg-preview.png" width="auto" /></div>
+							</div>
+						</div>
+					</div>
+					<div class="bee-block bee-block-2 bee-menu">
+						<nav class="bee-menu">
+							<ul class="bee-horizontal">
+								<li>Sevices</li><span>|</span>
+								<li>Portfolio </li><span>|</span>
+								<li>About Us</li>
+							</ul>
+						</nav>
 					</div>
 					<div class="bee-block bee-block-3 bee-divider">
 						<div class="center bee-separator" style="border-top:1px solid #dddddd;width:20%;"></div>
 					</div>
-					<div class="bee-block bee-block-4 bee-paragraph">
-						<p>we specialize in building fast, modern, and user-friendly websites for individuals and small to medium-sized businesses. From stunning design to seamless backend systems, we ensure your brand not only looks good but performs exceptionally well online.</p>
-					</div>
+					<div class="bee-block bee-block-4 bee-image"><img alt="" class="bee-center bee-autowidth" src="https://d63c45f0ff.imgdist.com/pub/bfra/pm0i19b2/zrk/86p/c84/wd%20Cover.png" style="max-width:600px;" /></div>
 					<div class="bee-block bee-block-5 bee-heading">
-						<h1><span class="tinyMce-placeholder">Our Services </span> </h1>
+						<h1><span class="tinyMce-placeholder">Welcome to Recode UX </span> </h1>
 					</div>
 					<div class="bee-block bee-block-6 bee-divider">
+						<div class="center bee-separator" style="border-top:1px solid #dddddd;width:20%;"></div>
+					</div>
+					<div class="bee-block bee-block-7 bee-paragraph">
+						<p>we specialize in building fast, modern, and user-friendly websites for individuals and small to medium-sized businesses. From stunning design to seamless backend systems, we ensure your brand not only looks good but performs exceptionally well online.</p>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="bee-row bee-row-2 bee-mobile_hide">
+			<div class="bee-row-content">
+				<div class="bee-col bee-col-1 bee-col-w12">
+					<div class="bee-block bee-block-1 bee-heading" id="module_835953d7-2c08-421a-a757-c8d794f5e976">
+						<h1><span class="tinyMce-placeholder">Our Services </span> </h1>
+					</div>
+					<div class="bee-block bee-block-2 bee-divider">
 						<div class="center bee-separator" style="border-top:1px solid #dddddd;width:10%;"></div>
 					</div>
-					<div class="bee-block bee-block-7 bee-image"><img alt="" class="bee-center bee-autowidth" src="https://d63c45f0ff.imgdist.com/pub/bfra/pm0i19b2/437/mze/wj0/1-2.png" style="max-width:560px;border-radius:10px;" /></div>
-					<div class="bee-block bee-block-8 bee-heading">
-						<h1><span class="tinyMce-placeholder">- <strong>Website Design &amp; Development</strong></span> </h1>
+					<div class="bee-block bee-block-3 bee-image" id="module_21a7f862-1741-4771-a0ee-72906ca436a3"><img alt="" class="bee-center bee-autowidth" src="https://d63c45f0ff.imgdist.com/pub/bfra/pm0i19b2/437/mze/wj0/1-2.png" style="max-width:560px;border-radius:10px;" /></div>
+					<div class="bee-block bee-block-4 bee-heading">
+						<h1><span class="tinyMce-placeholder"><strong>Website Design &amp; Development</strong></span> </h1>
 					</div>
-					<div class="bee-block bee-block-9 bee-list">
-						<ul>
-							<li><strong>Responsive, SEO-optimized websites</strong> built for performance across all devices</li>
-							<li><strong>CMS integration</strong> including platforms like WordPress, Webflow, and more</li>
-							<li><strong>E-commerce website setup</strong> with secure payment gateways and intuitive product layouts</li>
-							<li><strong>Backend and API integration</strong> to connect your systems and automate workflows</li>
-							<li><strong>Ongoing maintenance and support</strong> to keep your website running smoothly</li>
+					<div class="bee-block bee-block-5 bee-divider">
+						<div class="center bee-separator" style="border-top:1px solid #dddddd;width:20%;"></div>
+					</div>
+					<div class="bee-block bee-block-6 bee-heading">
+						<h2><span class="tinyMce-placeholder">What's included</span> </h2>
+					</div>
+					<div class="bee-block bee-block-7 bee-list">
+						<ul start="1">
+							<li><strong>Resp</strong><strong>onsive Web </strong><strong>Design</strong> – Optimized layouts that adapt seamlessly across all devices.</li>
+							<li><strong>CMS Integration</strong> – Setup and customization of platforms like WordPress, Webflow, and others.</li>
+							<li><strong>E-commerce Setup</strong> – Full online store development with secure payment gateways and product layouts.</li>
+							<li><strong>SEO Optimization</strong> – Technical and on-page SEO for better search visibility.</li>
+							<li><strong>Performance Tuning</strong> – Fast-loading, high-performance websites with speed best practices.</li>
+							<li><strong>Cross-browser Compatibility</strong> – Ensuring your site works smoothly on all major browsers.</li>
+							<li><strong>Ongoing Website Maintenance</strong> – Regular updates, fixes, and support to keep your site running smoothly.</li>
 						</ul>
 					</div>
-					<div class="bee-block bee-block-10 bee-image"><img alt="" class="bee-center bee-autowidth" src="https://d63c45f0ff.imgdist.com/pub/bfra/pm0i19b2/arc/zz3/rrl/2-1.png" style="max-width:560px;border-radius:10px;" /></div>
-					<div class="bee-block bee-block-11 bee-heading">
-						<h1><span class="tinyMce-placeholder">- <strong> Backend &amp; Technical Setup</strong></span> </h1>
+					<div class="bee-block bee-block-8 bee-image"><img alt="" class="bee-center bee-autowidth" src="https://d63c45f0ff.imgdist.com/pub/bfra/pm0i19b2/arc/zz3/rrl/2-1.png" style="max-width:560px;border-radius:10px;" /></div>
+					<div class="bee-block bee-block-9 bee-heading">
+						<h1><span class="tinyMce-placeholder"><strong>Backend &amp; Technical Setup</strong></span> </h1>
 					</div>
-					<div class="bee-block bee-block-12 bee-list">
-						<ul>
-							<li><strong>Domain and DNS configuration</strong> for a reliable and secure foundation</li>
-							<li><strong>SSL certificate installation</strong> to ensure your site is trusted and encrypted</li>
-							<li><strong>Professional business email setup</strong> (e.g., contact@recodeux.com)</li>
-							<li><strong>Email authentication configuration</strong> including DMARC, SPF, and DKIM for better deliverability</li>
-							<li><strong>Server and hosting setup</strong> tailored to your website's scale and performance needs</li>
-							<li><strong>Email deliverability optimization</strong> to reduce spam issues and ensure inbox success</li>
+					<div class="bee-block bee-block-10 bee-divider">
+						<div class="center bee-separator" style="border-top:1px solid #dddddd;width:20%;"></div>
+					</div>
+					<div class="bee-block bee-block-11 bee-list">
+						<ul start="1">
+							<li><strong>Backend Development</strong> – Building scalable server-side logic and functionality.</li>
+							<li><strong>API Integration</strong> – Connecting third-party services and systems seamlessly.</li>
+							<li><strong>Database Management</strong> – Designing and maintaining secure, efficient data structures.</li>
+							<li><strong>Server Configuration</strong> – Setting up and optimizing cloud or VPS servers.</li>
+							<li><strong>Hosting Setup</strong> – End-to-end hosting setup with performance and security in mind.</li>
+							<li><strong>Domain &amp; DNS Configuration</strong> – Securing domains with proper DNS setup for reliability.</li>
+							<li><strong>Business Email Setup</strong> – Creating professional email (e.g., <a rel="noopener" style="text-decoration: underline;">contact@yourdomain.com</a>) with authentication (SPF, DKIM, DMARC).</li>
 						</ul>
 					</div>
 				</div>
 			</div>
 		</div>
-		<div class="bee-row bee-row-3">
+		<div class="bee-row bee-row-3 bee-desktop_hide">
+			<div class="bee-row-content">
+				<div class="bee-col bee-col-1 bee-col-w6">
+					<div class="bee-block bee-block-1 bee-heading">
+						<h1><span class="tinyMce-placeholder">Our Services </span> </h1>
+					</div>
+					<div class="bee-block bee-block-2 bee-divider">
+						<div class="center bee-separator" style="border-top:1px solid #dddddd;width:10%;"></div>
+					</div>
+					<div class="bee-block bee-block-3 bee-image"><img alt="" class="bee-center bee-autowidth" src="https://d63c45f0ff.imgdist.com/pub/bfra/pm0i19b2/437/mze/wj0/1-2.png" style="max-width:220px;border-radius:10px;" /></div>
+					<div class="bee-block bee-block-4 bee-heading">
+						<h1><span class="tinyMce-placeholder"><strong>Website Design &amp; Development</strong></span> </h1>
+					</div>
+					<div class="bee-block bee-block-5 bee-divider">
+						<div class="center bee-separator" style="border-top:1px solid #dddddd;width:20%;"></div>
+					</div>
+					<div class="bee-block bee-block-6 bee-heading">
+						<h2><span class="tinyMce-placeholder">What's included</span> </h2>
+					</div>
+					<div class="bee-block bee-block-7 bee-icons">
+						<div class="bee-icon bee-icon-last">
+							<div class="bee-content">
+								<div class="bee-icon-image"><img alt="" height="16px" src="https://beefree.imgdist.com/public/default-rows-images/check.png" width="auto" /></div>
+								<div class="bee-icon-label bee-icon-label-right">Responsive Web Design</div>
+							</div>
+						</div>
+					</div>
+					<div class="bee-block bee-block-8 bee-icons">
+						<div class="bee-icon bee-icon-last">
+							<div class="bee-content">
+								<div class="bee-icon-image"><img alt="" height="16px" src="https://beefree.imgdist.com/public/default-rows-images/check.png" width="auto" /></div>
+								<div class="bee-icon-label bee-icon-label-right">CMS Integration</div>
+							</div>
+						</div>
+					</div>
+					<div class="bee-block bee-block-9 bee-icons">
+						<div class="bee-icon bee-icon-last">
+							<div class="bee-content">
+								<div class="bee-icon-image"><img alt="" height="16px" src="https://beefree.imgdist.com/public/default-rows-images/check.png" width="auto" /></div>
+								<div class="bee-icon-label bee-icon-label-right">E-commerce Setup</div>
+							</div>
+						</div>
+					</div>
+					<div class="bee-block bee-block-10 bee-icons">
+						<div class="bee-icon bee-icon-last">
+							<div class="bee-content">
+								<div class="bee-icon-image"><img alt="" height="16px" src="https://beefree.imgdist.com/public/default-rows-images/check.png" width="auto" /></div>
+								<div class="bee-icon-label bee-icon-label-right">Reusable content blocks</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="bee-col bee-col-2 bee-col-w6">
+					<div class="bee-block bee-block-1 bee-icons">
+						<div class="bee-icon bee-icon-last">
+							<div class="bee-content">
+								<div class="bee-icon-image"><img alt="" height="16px" src="https://beefree.imgdist.com/public/default-rows-images/check.png" width="auto" /></div>
+								<div class="bee-icon-label bee-icon-label-right">Backend &amp; API Integration</div>
+							</div>
+						</div>
+					</div>
+					<div class="bee-block bee-block-2 bee-icons">
+						<div class="bee-icon bee-icon-last">
+							<div class="bee-content">
+								<div class="bee-icon-image"><img alt="" height="16px" src="https://beefree.imgdist.com/public/default-rows-images/check.png" width="auto" /></div>
+								<div class="bee-icon-label bee-icon-label-right">Website Maintenance</div>
+							</div>
+						</div>
+					</div>
+					<div class="bee-block bee-block-3 bee-icons">
+						<div class="bee-icon bee-icon-last">
+							<div class="bee-content">
+								<div class="bee-icon-image"><img alt="" height="16px" src="https://beefree.imgdist.com/public/default-rows-images/check.png" width="auto" /></div>
+								<div class="bee-icon-label bee-icon-label-right">SEO Optimization</div>
+							</div>
+						</div>
+					</div>
+					<div class="bee-block bee-block-4 bee-icons">
+						<div class="bee-icon bee-icon-last">
+							<div class="bee-content">
+								<div class="bee-icon-image"><img alt="" height="16px" src="https://beefree.imgdist.com/public/default-rows-images/check.png" width="auto" /></div>
+								<div class="bee-icon-label bee-icon-label-right">Performance Tuning</div>
+							</div>
+						</div>
+					</div>
+					<div class="bee-block bee-block-5 bee-image"><img alt="" class="bee-center bee-fixedwidth" src="https://d63c45f0ff.imgdist.com/pub/bfra/pm0i19b2/arc/zz3/rrl/2-1.png" style="max-width:220px;border-radius:10px;" /></div>
+					<div class="bee-block bee-block-6 bee-heading">
+						<h1><span class="tinyMce-placeholder"><strong>Backend &amp; Technical Setup</strong></span> </h1>
+					</div>
+					<div class="bee-block bee-block-7 bee-icons">
+						<div class="bee-icon bee-icon-last">
+							<div class="bee-content">
+								<div class="bee-icon-image"><img alt="" height="16px" src="https://beefree.imgdist.com/public/default-rows-images/check.png" width="auto" /></div>
+								<div class="bee-icon-label bee-icon-label-right">Backend Development</div>
+							</div>
+						</div>
+					</div>
+					<div class="bee-block bee-block-8 bee-icons">
+						<div class="bee-icon bee-icon-last">
+							<div class="bee-content">
+								<div class="bee-icon-image"><img alt="" height="16px" src="https://beefree.imgdist.com/public/default-rows-images/check.png" width="auto" /></div>
+								<div class="bee-icon-label bee-icon-label-right">Domain Configuration</div>
+							</div>
+						</div>
+					</div>
+					<div class="bee-block bee-block-9 bee-icons">
+						<div class="bee-icon bee-icon-last">
+							<div class="bee-content">
+								<div class="bee-icon-image"><img alt="" height="16px" src="https://beefree.imgdist.com/public/default-rows-images/check.png" width="auto" /></div>
+								<div class="bee-icon-label bee-icon-label-right">Business Email Setup</div>
+							</div>
+						</div>
+					</div>
+					<div class="bee-block bee-block-10 bee-icons">
+						<div class="bee-icon bee-icon-last">
+							<div class="bee-content">
+								<div class="bee-icon-image"><img alt="" height="16px" src="https://beefree.imgdist.com/public/default-rows-images/check.png" width="auto" /></div>
+								<div class="bee-icon-label bee-icon-label-right">Hosting Setup</div>
+							</div>
+						</div>
+					</div>
+					<div class="bee-block bee-block-11 bee-icons">
+						<div class="bee-icon bee-icon-last">
+							<div class="bee-content">
+								<div class="bee-icon-image"><img alt="" height="16px" src="https://beefree.imgdist.com/public/default-rows-images/check.png" width="auto" /></div>
+								<div class="bee-icon-label bee-icon-label-right">Database Management</div>
+							</div>
+						</div>
+					</div>
+					<div class="bee-block bee-block-12 bee-icons">
+						<div class="bee-icon bee-icon-last">
+							<div class="bee-content">
+								<div class="bee-icon-image"><img alt="" height="16px" src="https://beefree.imgdist.com/public/default-rows-images/check.png" width="auto" /></div>
+								<div class="bee-icon-label bee-icon-label-right">API Integration</div>
+							</div>
+						</div>
+					</div>
+					<div class="bee-block bee-block-13 bee-icons">
+						<div class="bee-icon bee-icon-last">
+							<div class="bee-content">
+								<div class="bee-icon-image"><img alt="" height="16px" src="https://beefree.imgdist.com/public/default-rows-images/check.png" width="auto" /></div>
+								<div class="bee-icon-label bee-icon-label-right">Backend Development</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="bee-row bee-row-4">
+			<div class="bee-row-content">
+				<div class="bee-col bee-col-1 bee-col-w12">
+					<div class="bee-block bee-block-1 bee-button"><a class="bee-button-content" href="https://recodeux.com/#services" style="font-size: 16px; display: inline-block;" target="_blank"><span style="word-break: break-word; font-size: 16px; line-height: 200%; letter-spacing: normal;">More Services</span></a></div>
+				</div>
+			</div>
+		</div>
+		<div class="bee-row bee-row-5">
 			<div class="bee-row-content">
 				<div class="bee-col bee-col-1 bee-col-w12">
 					<div class="bee-block bee-block-1 bee-heading">
-						<h1>We’ve Launched Our Website! </h1>
+						<h1><span class="tinyMce-placeholder">We’ve Launched Our Website!</span> </h1>
 					</div>
 					<div class="bee-block bee-block-2 bee-divider">
 						<div class="center bee-separator" style="border-top:1px solid #dddddd;width:20%;"></div>
@@ -608,11 +1396,201 @@
 					<div class="bee-block bee-block-4 bee-paragraph">
 						<p>Whether you're looking to upgrade your online presence or start fresh with a high-performance website or app, we’re here to make it happen.</p>
 					</div>
-					<div class="bee-block bee-block-5 bee-button"><a class="bee-button-content" href="https://example.com/" style="font-size: 18px; display: inline-block;" target="_blank"><span style="word-break: break-word; font-size: 18px; line-height: 200%;">Visit Our Website</span></a></div>
+					<div class="bee-block bee-block-5 bee-button"><a class="bee-button-content" href="https://recodeux.com/" style="font-size: 18px; display: inline-block;" target="_blank"><span style="word-break: break-word; font-size: 18px; line-height: 200%; letter-spacing: normal;">Visit Our Website</span></a></div>
 				</div>
 			</div>
 		</div>
-		
+		<div class="bee-row bee-row-6">
+			<div class="bee-row-content">
+				<div class="bee-col bee-col-1 bee-col-w12">
+					<div class="bee-block bee-block-1 bee-heading">
+						<h1><span class="tinyMce-placeholder">Portfolio</span> </h1>
+					</div>
+					<div class="bee-block bee-block-2 bee-divider">
+						<div class="center bee-separator" style="border-top:1px solid #dddddd;width:10%;"></div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="bee-row bee-row-7">
+			<div class="bee-row-content">
+				<div class="bee-col bee-col-1 bee-col-w6">
+					<div class="bee-block bee-block-1 bee-image"><a href="https://evarastaffing.com/" target="_blank"><img alt="" class="bee-center bee-fullwidthOnMobile bee-fixedwidth" src="https://d63c45f0ff.imgdist.com/pub/bfra/pm0i19b2/czy/yme/2hs/3.png" style="max-width:270px;border-radius:8px;" /></a></div>
+					<div class="bee-block bee-block-2 bee-paragraph">
+						<p>Evarastaffing</p>
+					</div>
+					<div class="bee-block bee-block-3 bee-image"><a href="https://tourly-bice.vercel.app/" target="_blank"><img alt="" class="bee-center bee-fixedwidth bee-fullwidthOnMobile" src="https://d63c45f0ff.imgdist.com/pub/bfra/pm0i19b2/l8s/rdh/6j0/2.png" style="max-width:270px;border-radius:8px;" /></a></div>
+					<div class="bee-block bee-block-4 bee-paragraph">
+						<p>Tourly - Budget Friendly</p>
+					</div>
+				</div>
+				<div class="bee-col bee-col-2 bee-col-w6">
+					<div class="bee-block bee-block-1 bee-image"><a href="https://client-website-murex.vercel.app/" target="_blank"><img alt="" class="bee-center bee-fixedwidth bee-fullwidthOnMobile" src="https://d63c45f0ff.imgdist.com/pub/bfra/pm0i19b2/2kp/ydz/b0d/Screenshot%202025-04-06%20125216.png" style="max-width:270px;border-radius:8px;" /></a></div>
+					<div class="bee-block bee-block-2 bee-paragraph">
+						<p>Rv HighSpeed Internet</p>
+					</div>
+					<div class="bee-block bee-block-3 bee-image"><a href="https://vercel.com/adiraushans-projects/himachal-explore" target="_blank"><img alt="" class="bee-center bee-fixedwidth bee-fullwidthOnMobile" src="https://d63c45f0ff.imgdist.com/pub/bfra/pm0i19b2/5z9/cct/sxx/4.png" style="max-width:270px;border-radius:8px;" /></a></div>
+					<div class="bee-block bee-block-4 bee-paragraph">
+						<p>Himachal Pradesh </p>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="bee-row bee-row-8">
+			<div class="bee-row-content">
+				<div class="bee-col bee-col-1 bee-col-w12">
+					<div class="bee-block bee-block-1 bee-heading">
+						<h1><span class="tinyMce-placeholder">About Us</span> </h1>
+					</div>
+					<div class="bee-block bee-block-2 bee-divider">
+						<div class="center bee-separator" style="border-top:1px solid #dddddd;width:10%;"></div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="bee-row bee-row-9">
+			<div class="bee-row-content">
+				<div class="bee-col bee-col-1 bee-col-w6">
+					<div class="bee-block bee-block-1 bee-image"><img alt="" class="bee-center bee-fixedwidth bee-fullwidthOnMobile" src="https://d63c45f0ff.imgdist.com/pub/bfra/pm0i19b2/uno/yug/avd/post%204.png" style="max-width:270px;border-radius:8px;" /></div>
+				</div>
+				<div class="bee-col bee-col-2 bee-col-w6">
+					<div class="bee-block bee-block-1 bee-heading">
+						<h2>Why Recode UX? </h2>
+					</div>
+					<div class="bee-block bee-block-2 bee-paragraph">
+						<p>Fast, reliable, and scalable digital solutions—built to grow with you.</p>
+					</div>
+					<div class="bee-block bee-block-3 bee-button"><a class="bee-button-content" href="https://recodeux.com/#contact" style="font-size: 16px; display: inline-block;" target="_blank"><span style="word-break: break-word; font-size: 16px; line-height: 200%;"> Get Started</span></a></div>
+				</div>
+			</div>
+		</div>
+		<div class="bee-row bee-row-10">
+			<div class="bee-row-content">
+				<div class="bee-col bee-col-1 bee-col-w6">
+					<div class="bee-block bee-block-1 bee-heading">
+						<h2><span class="tinyMce-placeholder">What's included</span> </h2>
+					</div>
+					<div class="bee-block bee-block-2 bee-icons">
+						<div class="bee-icon bee-icon-last">
+							<div class="bee-content">
+								<div class="bee-icon-image"><img alt="" height="16px" src="https://beefree.imgdist.com/public/default-rows-images/check.png" width="auto" /></div>
+								<div class="bee-icon-label bee-icon-label-right">Performance-Driven Builds</div>
+							</div>
+						</div>
+					</div>
+					<div class="bee-block bee-block-3 bee-icons">
+						<div class="bee-icon bee-icon-last">
+							<div class="bee-content">
+								<div class="bee-icon-image"><img alt="" height="16px" src="https://beefree.imgdist.com/public/default-rows-images/check.png" width="auto" /></div>
+								<div class="bee-icon-label bee-icon-label-right">Scalable Backend Solutions</div>
+							</div>
+						</div>
+					</div>
+					<div class="bee-block bee-block-4 bee-icons">
+						<div class="bee-icon bee-icon-last">
+							<div class="bee-content">
+								<div class="bee-icon-image"><img alt="" height="16px" src="https://beefree.imgdist.com/public/default-rows-images/check.png" width="auto" /></div>
+								<div class="bee-icon-label bee-icon-label-right">Custom CMS Integration</div>
+							</div>
+						</div>
+					</div>
+					<div class="bee-block bee-block-5 bee-icons">
+						<div class="bee-icon bee-icon-last">
+							<div class="bee-content">
+								<div class="bee-icon-image"><img alt="" height="16px" src="https://beefree.imgdist.com/public/default-rows-images/check.png" width="auto" /></div>
+								<div class="bee-icon-label bee-icon-label-right">E-commerce Expertise</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="bee-col bee-col-2 bee-col-w6">
+					<div class="bee-block bee-block-1 bee-icons">
+						<div class="bee-icon bee-icon-last">
+							<div class="bee-content">
+								<div class="bee-icon-image"><img alt="" height="16px" src="https://beefree.imgdist.com/public/default-rows-images/check.png" width="auto" /></div>
+								<div class="bee-icon-label bee-icon-label-right">End-to-End Infrastructure</div>
+							</div>
+						</div>
+					</div>
+					<div class="bee-block bee-block-2 bee-icons">
+						<div class="bee-icon bee-icon-last">
+							<div class="bee-content">
+								<div class="bee-icon-image"><img alt="" height="16px" src="https://beefree.imgdist.com/public/default-rows-images/check.png" width="auto" /></div>
+								<div class="bee-icon-label bee-icon-label-right">Reliable API Integrations</div>
+							</div>
+						</div>
+					</div>
+					<div class="bee-block bee-block-3 bee-icons">
+						<div class="bee-icon bee-icon-last">
+							<div class="bee-content">
+								<div class="bee-icon-image"><img alt="" height="16px" src="https://beefree.imgdist.com/public/default-rows-images/check.png" width="auto" /></div>
+								<div class="bee-icon-label bee-icon-label-right">Ongoing Support</div>
+							</div>
+						</div>
+					</div>
+					<div class="bee-block bee-block-4 bee-icons">
+						<div class="bee-icon bee-icon-last">
+							<div class="bee-content">
+								<div class="bee-icon-image"><img alt="" height="16px" src="https://beefree.imgdist.com/public/default-rows-images/check.png" width="auto" /></div>
+								<div class="bee-icon-label bee-icon-label-right">Post Deployment Support</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="bee-row bee-row-11">
+			<div class="bee-row-content">
+				<div class="bee-col bee-col-1 bee-col-w4">
+					<div class="bee-block bee-block-1 bee-image"><a href="https://recodeux.com/" target="_blank"><img alt="" class="bee-autowidth" src="https://d63c45f0ff.imgdist.com/pub/bfra/pm0i19b2/lfk/yqf/dzq/e__1_-removebg-preview.png" style="max-width:170px;" /></a></div>
+					<div class="bee-block bee-block-2 bee-paragraph">
+						<p>Web, backend, hosting—fully covered.</p>
+					</div>
+				</div>
+				<div class="bee-col bee-col-2 bee-col-w4">
+					<div class="bee-block bee-block-1 bee-paragraph">
+						<p>Useful links</p>
+					</div>
+					<div class="bee-block bee-block-2 bee-menu">
+						<nav class="bee-menu">
+							<ul class="bee-vertical">
+								<li><a href="https://recodeux.com/#services" target="_self" title="">Services</a></li>
+								<li><a href="https://recodeux.com/#portfolio" target="_self" title="">Portfolio</a></li>
+								<li><a href="https://recodeux.com/#packages" target="_self" title="">Packages</a></li>
+								<li><a href="https://recodeux.com/" target="_self" title="">Our Website</a></li>
+							</ul>
+						</nav>
+					</div>
+				</div>
+				<div class="bee-col bee-col-3 bee-col-w4">
+					<div class="bee-block bee-block-1 bee-paragraph">
+						<p>Contact</p>
+					</div>
+					<div class="bee-block bee-block-2 bee-menu">
+						<nav class="bee-menu">
+							<ul class="bee-vertical">
+								<li><a href="mailto:contact@recodeux.com" target="_self" title="">contact@recodeux.com</a></li>
+								<li><a href="sms:8920059901" target="_self" title="">Help center</a></li>
+							</ul>
+						</nav>
+					</div>
+					<div class="bee-block bee-block-3 bee-social">
+						<div class="content"><span class="icon" style="padding:0 5px 0 5px;"><a href="https://www.facebook.com/people/Recode-UX/61576983875647/" target="_self"><img alt="facebook" src="https://app-rsrc.getbee.io/public/resources/social-networks-icon-sets/t-only-logo-white/facebook@2x.png" title="facebook" /></a></span><span class="icon" style="padding:0 5px 0 5px;"><a href="https://x.com/RecodeUx" target="_self"><img alt="twitter" src="https://app-rsrc.getbee.io/public/resources/social-networks-icon-sets/t-only-logo-white/twitter@2x.png" title="twitter" /></a></span><span class="icon" style="padding:0 5px 0 5px;"><a href="https://www.linkedin.com/company/recode-ux/" target="_self"><img alt="linkedin" src="https://app-rsrc.getbee.io/public/resources/social-networks-icon-sets/t-only-logo-white/linkedin@2x.png" title="linkedin" /></a></span><span class="icon" style="padding:0 5px 0 5px;"><a href="https://www.instagram.com/recodeux/" target="_self"><img alt="instagram" src="https://app-rsrc.getbee.io/public/resources/social-networks-icon-sets/t-only-logo-white/instagram@2x.png" title="instagram" /></a></span></div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="bee-row bee-row-12">
+			<div class="bee-row-content">
+				<div class="bee-col bee-col-1 bee-col-w12">
+					<div class="bee-block bee-block-1 bee-icons">
+						<div class="bee-icon bee-icon-last">
+							
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
 	</div>
 </body>
 
